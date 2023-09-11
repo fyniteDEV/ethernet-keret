@@ -7,13 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Mi az Ethernet?</h2>
+    <header>
+        <h1>ETHERNET</h1>
+    </header>
 
-    <h2>Működése</h2>
+    <h2>Mi az Ethernet?</h2>
+    <p>A helyi hálózatokban (LAN), a nagyvárosi hálózatokban (MAN) és a nagy kiterjedésű hálózatokban (WAN) általánosan használt vezetékes számítógépes hálózati technológiák családja</p>
+
+    <h2>Működése:</h2>
     <p>Úgy működik, hogy az eszközökre, például egy személyi számítógépre küldött vagy onnan érkező információkat különböző méretű információdarabokra, úgynevezett keretekre bontja. Ezek a keretek szabványosított információkat tartalmaznak, például a forrás- és célcímet, amelyek segítenek a keretnek a hálózaton való továbbjutásban.</p>
 
+    <h2>Az Ethernet hálózatokban a következő szabályoknak kell érvényesülni:</h2>
+    <ol>
+        <li>
+            Minden egyes Ethernet kártya egyedi címmel kell rendelkezzen, amelyet a gyártó a hardverbe éget bele. Az IEEE szabályozza az Ethernet címek kiosztását.
+        </li>
+        <li>
+            A hálózatra kötött Ethernet kártyák egyszerre figyelik a hálózaton forgalmazott adatokat és bármikor képesek üzenetet adni a hálózaton.
+        </li>
+        <li>
+            Egyszerre csak egyetlen adatcsomag (frame) lehet a hálózaton. Ha a hálózaton ad egy kártya, akkor a többi kártya nem adhat. Ha egyszerre több kártya is adni szeretne, akkor csomagütközés történik. Ebben az esetben mindkét kártya befejezi az adást, majd véletlen hosszúságú várakozás után ismét megpróbálnak adni a hálózaton.
+        </li>
+        <li>
+            Az adatcsomagot küldő mindig beleírja az üzenetbe a címzett kártya címét.
+        </li>
+        <li>
+            Ha egy adatcsomag kerül a hálózatra, akkor azt minden eszköz elolvassa, de csak a címzett dolgozza fel, míg a többi eldobja.
+        </li>
+    </ol>
+
     <h2>Keret elemei:</h2>
-    <table>
+    <table id="ethernet-table">
         <tr>
             <th>Keret elemei</th>
             <th>Preambulum (Előtag)</th>
@@ -24,7 +48,7 @@
             <th>CRC (Cyclic Redundancy Check)</th>
         </tr>
         <tr>
-            <td>Méret (byte)</td>
+            <th>Méret (byte)</th>
             <td>8</td>
             <td>6</td>
             <td>6</td>
@@ -33,5 +57,9 @@
             <td>4</td>
         </tr>
     </table>
+
+    <footer>
+        <h3>Készítette: Jenei Péter</h3>
+    </footer>
 </body>
 </html>
