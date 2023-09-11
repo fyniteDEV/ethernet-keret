@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethernet keret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Mi az Ethernet?</h2>
+
+    <h2>Működése</h2>
+    <p>Úgy működik, hogy az eszközökre, például egy személyi számítógépre küldött vagy onnan érkező információkat különböző méretű információdarabokra, úgynevezett keretekre bontja. Ezek a keretek szabványosított információkat tartalmaznak, például a forrás- és célcímet, amelyek segítenek a keretnek a hálózaton való továbbjutásban.</p>
+
+    <h2>Keret elemei:</h2>
+    <table>
+        <tr>
+            <th>Keret elemei</th>
+            <th>Preambulum (Előtag)</th>
+            <th>Cél MAC-cím</th>
+            <th>Forrás MAC-cím</th>
+            <th>Típus / hossz</th>
+            <th>Adat</th>
+            <th>CRC (Cyclic Redundancy Check)</th>
+        </tr>
+        <tr>
+            <td>Méret (byte)</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>2</td>
+            <td>46 - 1500</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+</html>
